@@ -5,7 +5,7 @@ Adam Morse for http://tachyons.io/
 Jon Gold for https://github.com/jongold/tachyons-js
 and also https://styled-components.com/
 
-```javascript
+```jsx
 
 import styled from 'styled-components'
 import tachyons from '../index.js'
