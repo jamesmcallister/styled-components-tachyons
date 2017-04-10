@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jamesmcallister/tachyons-for-styled-components/issues"
   },
-  "homepage": "https://github.com/jamesmcallister/tachyons-for-styled-components#readme"
+  "homepage": "https://github.com/jamesmcallister/tachyons-for-styled-components#readme",
+  "dependencies": {
+    "tachyons-js": "https://github.com/jamesmcallister/tachyons-js"
+  }
 }
