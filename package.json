@@ -1,22 +1,28 @@
 {
-  "name": "tachyons-for-styled-components",
-  "version": "0.0.2",
-  "description": "Tachyon for styled components",
-  "main": "index.js",
+  "name": "styled-components-tachyons",
+  "version": "0.0.3",
+  "description": "Tachyons for styled components",
+  "main": "bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jamesmcallister/tachyons-for-styled-components.git"
   },
-  "author": "",
+  "author": "James McAllister",
   "license": "",
   "bugs": {
     "url": "https://github.com/jamesmcallister/tachyons-for-styled-components/issues"
   },
   "homepage": "https://github.com/jamesmcallister/tachyons-for-styled-components#readme",
-  "dependencies": {
-    "tachyons-js": "https://github.com/jamesmcallister/tachyons-js"
+  "devDependencies": {
+    "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-filesize": "^1.2.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "tachyons-js": "https://github.com/jamesmcallister/tachyons-js",
+    "uglify-js-harmony": "^2.7.5"
   }
 }
