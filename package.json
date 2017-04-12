@@ -1,6 +1,6 @@
 {
   "name": "styled-components-tachyons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Tachyons for styled components",
   "main": "bundle.js",
   "scripts": {
