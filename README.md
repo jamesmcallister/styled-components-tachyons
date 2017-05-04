@@ -1,14 +1,25 @@
 # tachyons-for-styled-components
 
+Beaware that you need to use `snake_cased` rather than `kebab-cased`
+
 Thanks to :
 Adam Morse for http://tachyons.io/
 Jon Gold for https://github.com/jongold/tachyons-js
 and also https://styled-components.com/
 
+Install with npm i.e
+
+```sh 
+
+npm install styled-components-tachyons
+```
+
+
+
 ```jsx
 
 import styled from 'styled-components'
-import tachyons from '../index.js'
+import tachyons from 'styled-components-tachyons'
 
 const Article = styled.article`
   ${tachyons}
