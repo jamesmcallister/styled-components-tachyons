@@ -1,0 +1,147 @@
+{
+  "name": "jamesmcallister/styled-components-tachyons",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "styled-components-tachyons",
+  "branch": "",
+  "style": {
+    "name": "Default",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+    "fontWeight": 400,
+    "bold": 600,
+    "lineHeight": 1.5,
+    "typeScale": [
+      72,
+      48,
+      24,
+      20,
+      16,
+      14,
+      12
+    ],
+    "monospace": "Menlo, monospace",
+    "heading": {
+      "fontFamily": null,
+      "fontStyle": null,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "textTransform": null,
+      "letterSpacing": null
+    },
+    "h0": {},
+    "h1": {},
+    "h2": {},
+    "h3": {},
+    "h4": {},
+    "h5": {},
+    "h6": {},
+    "alternativeText": {},
+    "space": [
+      0,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "centered": false
+    },
+    "colors": {
+      "text": "#111",
+      "background": "#fff",
+      "primary": "#08e",
+      "secondary": "#059",
+      "highlight": "#e08",
+      "border": "#ddd",
+      "muted": "#eee"
+    },
+    "border": {
+      "width": 1,
+      "radius": 2
+    },
+    "link": {},
+    "button": {
+      "hover": {
+        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
+      }
+    },
+    "input": {},
+    "body": {
+      "margin": 0
+    },
+    "breakpoints": {
+      "xs": "@media screen and (max-width:40em)",
+      "sm": "@media screen and (min-width:40em)",
+      "md": "@media screen and (min-width:52em)",
+      "lg": "@media screen and (min-width:64em)"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://www.npmjs.com/package/styled-components-tachyons",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/jamesmcallister/styled-components-tachyons",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/styled-components-tachyons",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "styled-components-tachyons",
+      "subhead": "Bringing Tachyon's in with styled components",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "styled-components-tachyons: Bringing Tachyon's in with styled components",
+          "url": "https://www.npmjs.com/package/styled-components-tachyons"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "jamesmcallister",
+          "repo": "styled-components-tachyons"
+        }
+      ],
+      "text": "v0.0.4"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>tachyons-for-styled-components</h1>\n<p>Beaware that you need to use <code>snake_cased</code> rather than <code>kebab-cased</code></p>\n<p>Thanks to :\nAdam Morse for <a href=\"http://tachyons.io/\">http://tachyons.io/</a>\nJon Gold for <a href=\"https://github.com/jongold/tachyons-js\">https://github.com/jongold/tachyons-js</a>\nand also <a href=\"https://styled-components.com/\">https://styled-components.com/</a></p>\n<p>Install with npm i.e</p>\n<pre>\nnpm install styled-components-tachyons</pre><pre>\n<span class=\"hljs-keyword\">import</span> styled <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&apos;styled-components&apos;</span>\n<span class=\"hljs-keyword\">import</span> tachyons <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&apos;styled-components-tachyons&apos;</span>\n\n<span class=\"hljs-keyword\">const</span> Article = styled.article<span class=\"hljs-string\">`\n  <span class=\"hljs-subst\">${tachyons}</span>\n  font-family: athelas, georgia, serif;\n  background-color: var(--yellow);\n`</span>\n<span class=\"hljs-keyword\">const</span> Main = styled.div<span class=\"hljs-string\">`\n  <span class=\"hljs-subst\">${tachyons}</span>\n  background:url(./static/009.jpg) no-repeat center;\n`</span>\n<span class=\"hljs-keyword\">const</span> Header = styled.header<span class=\"hljs-string\">`\n  <span class=\"hljs-subst\">${tachyons}</span>\n`</span>\n<span class=\"hljs-keyword\">const</span> Div = styled.div<span class=\"hljs-string\">`\n  <span class=\"hljs-subst\">${tachyons}</span>\n  `</span>\n<span class=\"hljs-keyword\">const</span> H1 = styled.h1<span class=\"hljs-string\">`\n  <span class=\"hljs-subst\">${tachyons}</span>\n  `</span>\n<span class=\"hljs-keyword\">const</span> H2 = styled.h2<span class=\"hljs-string\">`\n  <span class=\"hljs-subst\">${tachyons}</span>\n  `</span>\n<span class=\"hljs-keyword\">const</span> H3 = styled.h3<span class=\"hljs-string\">`\n  <span class=\"hljs-subst\">${tachyons}</span>\n  `</span>\n<span class=\"hljs-keyword\">const</span> P = styled.p<span class=\"hljs-string\">`\n  <span class=\"hljs-subst\">${tachyons}</span>\n  `</span>\n<span class=\"hljs-keyword\">const</span> Blockquote = styled.blockquote<span class=\"hljs-string\">`\n  <span class=\"hljs-subst\">${tachyons}</span>\n  `</span>\n<span class=\"hljs-keyword\">const</span> Cite = styled.cite<span class=\"hljs-string\">`\n  <span class=\"hljs-subst\">${tachyons}</span>\n  `</span>\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> () =&gt;\n  <span class=\"xml\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">Article</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">Main</span> <span class=\"hljs-attr\">dt</span> <span class=\"hljs-attr\">w_100</span> <span class=\"hljs-attr\">vh_100</span> <span class=\"hljs-attr\">tc</span> <span class=\"hljs-attr\">bg_dark_gray</span> <span class=\"hljs-attr\">white</span> <span class=\"hljs-attr\">cover</span> &gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">Div</span> <span class=\"hljs-attr\">dtc</span> <span class=\"hljs-attr\">v_mid</span> &gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">Header</span> <span class=\"hljs-attr\">white-70</span> &gt;</span>\n          <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">H2</span> <span class=\"hljs-attr\">f6</span> <span class=\"hljs-attr\">fw1</span> <span class=\"hljs-attr\">ttu</span> <span class=\"hljs-attr\">tracked</span> <span class=\"hljs-attr\">mb2</span> <span class=\"hljs-attr\">lh_title</span> &gt;</span>Issue Six<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">H2</span>&gt;</span>\n          <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">H3</span> <span class=\"hljs-attr\">f6</span> <span class=\"hljs-attr\">fw1</span> <span class=\"hljs-attr\">lh_title</span> &gt;</span>Summer MMXVI<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">H3</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">Header</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">H1</span> <span class=\"hljs-attr\">f1</span> <span class=\"hljs-attr\">f_headline_l</span> <span class=\"hljs-attr\">fw1</span> <span class=\"hljs-attr\">i</span> <span class=\"hljs-attr\">white_60</span> &gt;</span>The Chronicles<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">H1</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">Blockquote</span> <span class=\"hljs-attr\">ph0</span> <span class=\"hljs-attr\">mh0</span> <span class=\"hljs-attr\">measure</span> <span class=\"hljs-attr\">f4</span> <span class=\"hljs-attr\">lh_copy</span> <span class=\"hljs-attr\">center</span> &gt;</span>\n          <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">P</span> <span class=\"hljs-attr\">fw1</span> <span class=\"hljs-attr\">white_70</span> &gt;</span>\n            It&apos;s the space you put between the notes that make the music.\n        <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">P</span>&gt;</span>\n          <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">Cite</span> <span class=\"hljs-attr\">f6</span> <span class=\"hljs-attr\">ttu</span> <span class=\"hljs-attr\">tracked</span> <span class=\"hljs-attr\">fs_normal</span> &gt;</span>Massimo Vignelli<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">Cite</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">Blockquote</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">Div</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">Main</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">Div</span> <span class=\"hljs-attr\">center</span> <span class=\"hljs-attr\">measure_wide</span> <span class=\"hljs-attr\">f5</span> <span class=\"hljs-attr\">pv5</span> <span class=\"hljs-attr\">lh_copy</span> <span class=\"hljs-attr\">ph2</span> &gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">H1</span> <span class=\"hljs-attr\">f1</span> <span class=\"hljs-attr\">lh_title</span>&gt;</span>The repercussion of ugliness is endless<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">H1</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>\n        The choice of paper size is one of the  first of any given work to be printed. There are two basic paper size systems in the world: the international A sizes, and the American sizes.\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>\n        The international Standard paper sizes, called the A series, is based\n      on a golden rectangle, the divine proportion. It is extremely handsome\n      and practical as well. It is adopted by many countries around the world\n      and is based on the German DIN metric Standards. The United States uses\n      a basic letter size (8 1/2 x 11&#x201D;) of ugly proportions, and results in\n      complete chaos with an endless amount of paper sizes. It is a\n      by_product of the culture of free enterprise, competition and waste.\n      Just another example of the misinterpretations of freedom.\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>\n        These are the basic DIN sizes in mm. for : A0, 841x1189 _ A1, 594x841 _\n      A2, 420x594 _ A3, 297x420 _ A4, 210x297 _ A5, 148x210 _ A6, 105 x148 _\n      A7, 74x 105 _ A8, 52x74 _ A9, 37x52 _ A10, 26x37.\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>\n        The A4 is the basic size for stationary. Two thirds of it is a square,\n      a nice economical happenstance resulting from the golden rectangle.\n      It is one of the reasons we tend to use as much\n      as possible the DIN sizes: proportions are always leading to other nice proportions.\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>\n        This does not happen with the American basic size which leads to nothing. I counted 28 different standard sizes in USA!. The only reason we use it is because everybody in USA uses it, all stationary in USA is that size, so are manilla folders,  les and of ce equipment!\n      The repercussion of ugliness is endless.\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">Div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">Article</span>&gt;</span></span></pre>"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/jamesmcallister/styled-components-tachyons",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/jamesmcallister",
+          "text": "jamesmcallister"
+        }
+      ]
+    }
+  ]
+}
