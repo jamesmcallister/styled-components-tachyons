@@ -14,7 +14,7 @@ Install with npm i.e
 npm install styled-components-tachyons
 ```
 
-Add tachyons css variables somewhere in your project.  Below are some of the default tachyons variables (some excluded for brevity).
+Add tachyons css variables somewhere in your project.  Below are some of the default tachyons variables (some excluded for brevity).  Alternatively you could `import` variables.css from this respository via your favorite bundler (webpack etc.).
 
 ```html
     <style>
