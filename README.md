@@ -14,6 +14,34 @@ Install with npm i.e
 npm install styled-components-tachyons
 ```
 
+Add tachyons css variables somewhere in your project.  Below are some of the default tachyons variables (some excluded for brevity.
+
+```html
+    <style>
+     :root {
+        --black: #000;
+        --near-black: #111;
+        --dark-gray:#333;
+        --mid-gray:#555;
+        --gray: #777;
+        --silver: #999;
+        --light-silver: #aaa;
+        --moon-gray: #ccc;
+        --light-gray: #eee;
+        --near-white: #f4f4f4;
+        --white: #fff;
+
+        --dark-red: #f00008;
+        --red: #ff3223;
+        --orange: #f3a801;
+        --gold: #f2c800;
+        --yellow: #ffde37;
+        --purple: #7d5da9;
+        --light-purple: #8d4f92;
+  
+    }
+    </style>
+```
 
 
 ```jsx
