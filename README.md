@@ -43,6 +43,7 @@ Add tachyons css variables somewhere in your project.  Below are some of the def
     </style>
 ```
 
+Example usage
 
 ```jsx
 
