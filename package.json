@@ -17,12 +17,15 @@
   },
   "homepage": "https://github.com/jamesmcallister/tachyons-for-styled-components#readme",
   "devDependencies": {
-    "rollup": "^0.41.6",
-    "rollup-plugin-commonjs": "^8.0.2",
-    "rollup-plugin-filesize": "^1.2.1",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-uglify": "^1.0.1",
+    "babel-plugin-external-helpers": "6.22.0",
+    "babel-preset-latest": "6.24.1",
+    "rollup-plugin-babel": "2.7.1",
+    "rollup": "0.41.6",
+    "rollup-plugin-commonjs": "8.0.2",
+    "rollup-plugin-filesize": "1.2.1",
+    "rollup-plugin-node-resolve": "3.0.0",
+    "rollup-plugin-uglify": "1.0.1",
     "tachyons-js": "https://github.com/jamesmcallister/tachyons-js",
-    "uglify-js-harmony": "^2.7.5"
+    "uglify-js-harmony": "2.7.5"
   }
 }

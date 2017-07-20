@@ -1,8 +1,9 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import filesize from 'rollup-plugin-filesize';
-import uglify from 'rollup-plugin-uglify';
-import {minify} from 'uglify-js-harmony';
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import filesize from 'rollup-plugin-filesize'
+import uglify from 'rollup-plugin-uglify'
+import { minify } from 'uglify-js-harmony'
+import babel from 'rollup-plugin-babel'
 
 export default {
   entry: 'main.js',
@@ -11,8 +12,11 @@ export default {
   format: 'cjs',
   plugins: [
     commonjs(),
-    resolve({jsnext: true, main: true}),
+    resolve({ jsnext: true, main: true }),
+    babel({
+      exclude: 'node_modules/**' // only transpile our source code
+    }),
     uglify({}, minify),
-    filesize(),
-  ],
-};
+    filesize()
+  ]
+}
