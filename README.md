@@ -1,6 +1,6 @@
 # tachyons-for-styled-components
 
-Have a play on https://codesandbox.io/s/KOD16MXpM
+[![Edit jamesmcallister/styled-components-tachyons: example-site](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/KOD16MXpM)
 
 Beaware that you need to use `snake_cased` rather than `kebab-cased`
 
